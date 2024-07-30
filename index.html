@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <script>
+        window.onload = function() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        };
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Saray Baklava</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="header-container">
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <img src="assets/sarayTextLogo.png" alt="Saray Baklava" class="header-image">
+                <div class="language-selector">
+                    <i class="fas fa-globe" onclick="toggleLanguageOptions()"></i>
+                    <div class="language-options">
+                        <a href="#" data-lang="en" onclick="changeLanguage('en')">English</a>
+                        <a href="#" data-lang="ar" onclick="changeLanguage('ar')">Arabic</a>
+                        <a href="#" data-lang="ku" onclick="changeLanguage('ku')">Kurdish</a>
+                    </div>
+                </div>                              
+            </div>
+            <div class="sidebar-content">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#coffee" data-translate="hot-coffee"><i class="fas fa-coffee"></i> <span class="text">Hot Coffee</span></a></li>
+                        <li><a href="#baklava" data-translate="baklava"><i class="fas fa-cookie-bite"></i> <span class="text">Baklava</span></a></li>
+                        <li><a href="#freshDrinks" data-translate="fresh-juice"><i class="fas fa-wine-glass-alt"></i> <span class="text">Fresh Juice</span></a></li>
+                        <li><a href="#kunafa" data-translate="kunafa"><i class="fas fa-utensils"></i> <span class="text">Kunafa</span></a></li>
+                        <li><a href="#cake" data-translate="cake"><i class="fas fa-birthday-cake"></i> <span class="text">Cake</span></a></li>
+                    </ul>
+                </nav>                                                                               
+                <!--Coffee Section-->
+                <section id="coffee" class="section">
+                    <h2 data-translate="hot-coffee">Hot Coffee</h2>
+                    <div class="items-container">
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/hotCoffe/mistak-coffee.jpg" alt="Mistak Coffee">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="mistak-coffee">Mistak Coffee</h3>
+                                <span data-translate="5000">5000IQD</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/hotCoffe/espresso.jpg" alt="Espresso">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="espresso">Espresso</h3>
+                                <span data-translate="3000">3000IQD</span>
+                            </div>
+                        </div>
+                        <button class="more-btn" data-translate="more">More</button>
+                    </div>
+                    <div class="extra-items">
+                        <div class="drawer-header" data-translate="hot-coffee">Hot Coffees</div>
+                        <div class="bottom-drawer">
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/hotCoffe/americano.jpg" alt="Americano">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="americano">Americano</h3>
+                                    <span data-translate="4000">4000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/hotCoffe/cappuccino.jpg" alt="Cappuccino">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="cappuccino">Cappuccino</h3>
+                                    <span data-translate="2500">2500IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/hotCoffe/dark-roast-coffe.jpg" alt="Dark Roast Coffee">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="dark-roast-coffee">Dark Roast Coffee</h3>
+                                    <span data-translate="2000">2000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/hotCoffe/latte.jpg" alt="Latte">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="latte">Latte</h3>
+                                    <span data-translate="3000">3000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/hotCoffe/macchiato.jpg" alt="Macchiato">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="macchiato">Macchiato</h3>
+                                    <span data-translate="4000">4000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/hotCoffe/mocha.png" alt="Mocha">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="mocha">Mocha</h3>
+                                    <span data-translate="5000">5000IQD</span>
+                                </div>
+                            </div>
+                            <!-- Add more cards as needed -->
+                        </div>
+                    </div>
+                </section>
+                <!--Baklava Section-->
+                <section id="baklava" class="section">
+                    <h2 data-translate="baklava">Baklava</h2>
+                    <div class="items-container">
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/baklava/baklava.jpeg" alt="Baklava">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="baklava">Baklava</h3>
+                                <span data-translate="500">500IQD</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/baklava/fistaqBaklava.jpeg" alt="Pistachio Baklava">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="pistachio-baklava">Pistachio Baklava</h3>
+                                <span data-translate="1000">1000IQD</span>
+                            </div>
+                        </div>
+                        <button class="more-btn" data-translate="more">More</button>
+                    </div>
+                    <div class="extra-items">
+                        <div class="drawer-header" data-translate="baklava">Baklava</div>
+                        <div class="bottom-drawer">
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/baklava/bulbulYuvasi.jpg.jpg" alt="Bulbul Yuvasi">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="bulbul-yuvasi">Bulbul Yuvasi</h3>
+                                    <span data-translate="1500">1500IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/baklava/carrotSlice.jpg.jpg" alt="Carrot Slice">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="carrot-slice">Carrot Slice</h3>
+                                    <span data-translate="1500">1500IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/baklava/chocolateBaklava.jpg.jpg" alt="Chocolate Baklava">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="chocolate-baklava">Chocolate Baklava</h3>
+                                    <span data-translate="1000">1000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/baklava/fistikDolama.jpg.jpg" alt="Pistachio Dolma">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="pistachio-dolma">Pistachio Dolma</h3>
+                                    <span data-translate="1500">1500IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/baklava/sarayBurmasi.jpg.jpg" alt="Saray Burmasi">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="saray-burmasi">Saray Burmasi</h3>
+                                    <span data-translate="1000">1000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/baklava/sutluNuriye.jpg.jpg" alt="Sutlu Nuriye">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="sutlu-nuriye">Sutlu Nuriye</h3>
+                                    <span data-translate="1000">1000IQD</span>
+                                </div>
+                            </div>
+                            <!-- Add more cards as needed -->
+                        </div>
+                    </div>
+                </section>
+                <!--Fresh Drinks Section-->
+                <section id="freshDrinks" class="section">
+                    <h2 data-translate="fresh-juice">Fresh Juice</h2>
+                    <div class="items-container">
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/freshDrinks/orange.jpg" alt="Orange">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="orange-juice">Orange Juice</h3>
+                                <span data-translate="2000">2000IQD</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/freshDrinks/strawberry.jpg" alt="Strawberry">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="strawberry-juice">Strawberry Juice</h3>
+                                <span data-translate="2500">2500IQD</span>
+                            </div>
+                        </div>
+                        <button class="more-btn" data-translate="more">More</button>
+                    </div>
+                    <div class="extra-items">
+                        <div class="drawer-header" data-translate="fresh-juice">Fresh Juice</div>
+                        <div class="bottom-drawer">
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/freshDrinks/blueberry.jpg" alt="Blueberry">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="blueberry-juice">Blueberry</h3>
+                                    <span data-translate="3000">3000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/freshDrinks/cocunut.jpg" alt="Cocunut">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="cocunut-juice">Cocunut</h3>
+                                    <span data-translate="3000">3000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/freshDrinks/pineapple.jpg" alt="pineapple">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="pineapple-juice">Pineapple</h3>
+                                    <span data-translate="4000">4000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/freshDrinks/watermelon.jpg" alt="Watermelon">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="watermelon-juice">Watermelon</h3>
+                                    <span data-translate="3000">3000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/freshDrinks/cocktail.jpg" alt="Cocktail">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="cocktail-juice">Cocktail</h3>
+                                    <span data-translate="6000">6000IQD</span>
+                                </div>
+                            </div>
+                            <!-- Add more cards as needed -->
+                        </div>
+                    </div>
+                </section>
+                <!--Kunafa Section-->
+                <section id="kunafa" class="section">
+                    <h2 data-translate="kunafa">Kunafa</h2>
+                    <div class="items-container">
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/kunafa/kunafa.jpg" alt="Normal Kunafa ">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="kunafa-item">Normal Kunafa</h3>
+                                <span data-translate="3000">3000IQD</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/kunafa/fistaq-kunafa.jpeg" alt="Pistachio Kunafa">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="nuts-kunafa">Pistachio Kunafa</h3>
+                                <span data-translate="3500">3500IQD</span>
+                            </div>
+                        </div>
+                        <button class="more-btn" data-translate="more">More</button>
+                    </div>
+                    <div class="extra-items">
+                        <div class="drawer-header" data-translate="kunafa">Kunafa</div>
+                        <div class="bottom-drawer">
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/kunafa/cheesy-kunafa.jpg" alt="Cheesy Kunafa">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="cheese-kunafa">Cheesy Kunafa</h3>
+                                    <span data-translate="3500">3500IQD</span>
+                                </div>
+                            </div>
+                            <!-- Add more cards as needed -->
+                        </div>
+                    </div>
+                </section>
+                <!--Cake Section-->
+                <section id="cake" class="section">
+                    <h2 data-translate="cake">Cake</h2>
+                    <div class="items-container">
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/cake/vanilla.jpg" alt="Vanilla">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="vanilla-cake">Vanilla</h3>
+                                <span data-translate="3000">3000IQD</span>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="image-wrapper">
+                                <img src="assets/cake/chocolate.jpg" alt="Chocolate">
+                            </div>
+                            <div class="item-info">
+                                <h3 data-translate="chocolate-cake">Chocolate</h3>
+                                <span data-translate="3000">3000IQD</span>
+                            </div>
+                        </div>
+                        <button class="more-btn" data-translate="more">More</button>
+                    </div>
+                    <div class="extra-items">
+                        <div class="drawer-header" data-translate="cake">Cake</div>
+                        <div class="bottom-drawer">
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/cake/layered-cake.jpeg" alt="Red Velvet">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="red-velvet">Red Velvet</h3>
+                                    <span data-translate="4000">4000IQD</span>
+                                </div>
+                            </div>
+                            <div class="item-info-drawer">
+                                <div class="image-wrapper">
+                                    <img src="assets/cake/strawberry.jpg" alt="Strawberry">
+                                </div>
+                                <div class="item-info">
+                                    <h3 data-translate="strawberry-cake">Strawberry</h3>
+                                    <span data-translate="4000">4000IQD</span>
+                                </div>
+                            </div>
+                            <!-- Add more cards as needed -->
+                        </div>
+                    </div>
+                </section>
+                  <!-- Repeat for other sections (Baklava, Drinks) -->  
+            </div>
+        </aside>
+        <main class="main-content">
+            <img src="assets/logo.png" alt="Saray Baklava" class="logo">
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="myModal">&times;</span>
+            <img id="myModalImage" src="" alt="">
+        </div>
+    </div>
+    <div id="drawerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="drawerModal">&times;</span>
+            <img id="drawerModalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="static/js/main.js"></script>
+    <script src="static/js/drawer.js"></script>
+    <script src="static/js/modal.js"></script>
+    <script src="static/js/languages.js"></script>
+</body>
+</html>
