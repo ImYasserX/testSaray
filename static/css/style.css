@@ -467,12 +467,23 @@ body {
 }
 
 .footer {
-  margin-top: auto; 
+  margin-top: 100px; 
   background-color: var(--saray-gold-lightest);
   text-align: center;
   padding: 20px;
-  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid #ddd; 
+}
+
+.nova-tech-link {
+  color: var(--saray-gold); /* Adjust color as needed */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+}
+
+.nova-tech-link:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
 }
 
 /* Responsive Design */
