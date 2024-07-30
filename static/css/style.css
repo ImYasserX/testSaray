@@ -466,6 +466,14 @@ body {
   cursor: pointer;
 }
 
+.footer {
+  margin-top: auto; 
+  background-color: var(--saray-gold-lightest);
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ddd; /* Optional: adds a border above the footer */
+}
+
 /* Responsive Design */
 
 @media (max-width: 768px) {
