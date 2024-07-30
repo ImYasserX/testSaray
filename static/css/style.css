@@ -470,8 +470,9 @@ body {
   margin-top: auto; 
   background-color: var(--saray-gold-lightest);
   text-align: center;
-  padding: 10px;
-  border-top: 1px solid #ddd; /* Optional: adds a border above the footer */
+  padding: 20px;
+  flex-shrink: 0;
+  border-top: 1px solid #ddd; 
 }
 
 /* Responsive Design */
